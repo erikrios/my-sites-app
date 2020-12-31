@@ -2,6 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {
+  final informationTextStyle = TextStyle(
+    fontFamily: 'Oxygen',
+  );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,10 +22,7 @@ class DetailScreen extends StatelessWidget {
                 child: Text(
                   'Farm House Lembang',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 30.0, fontFamily: 'Staatliches'),
                 ),
               ),
               Container(
@@ -39,6 +40,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                         Text(
                           'Open Everyday',
+                          style: informationTextStyle,
                         )
                       ],
                     ),
@@ -52,6 +54,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                         Text(
                           '09:00 - 20:00',
+                          style: informationTextStyle,
                         )
                       ],
                     ),
@@ -65,6 +68,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                         Text(
                           'Rp. 25.000',
+                          style: informationTextStyle,
                         )
                       ],
                     )
