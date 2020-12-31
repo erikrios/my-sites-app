@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_sites_app/pages/detail_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,11 +13,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('My Sites App'),
         ),
-        body: Container(
-          child: Center(
-            child: Text('Hello, World!'),
-          ),
-        ),
+        body: DetailScreen(),
       ),
     );
   }
