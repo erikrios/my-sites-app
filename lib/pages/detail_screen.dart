@@ -25,11 +25,16 @@ class DetailScreen extends StatelessWidget {
                     place.imageAsset,
                   ),
                   SafeArea(
-                    child: IconButton(
-                      icon: Icon(Icons.arrow_back),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
+                    child: Row(
+                      children: [
+                        IconButton(
+                          icon: Icon(Icons.arrow_back),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                        FavoriteButton(),
+                      ],
                     ),
                   )
                 ],
