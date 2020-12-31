@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_sites_app/pages/detail_screen.dart';
+import 'package:my_sites_app/pages/main_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Sites App',
       theme: ThemeData.dark(),
-      home: DetailScreen(),
+      home: MainScreen(),
     );
   }
 }
