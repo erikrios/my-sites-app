@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_sites_app/pages/detail_screen.dart';
 
 class MainScreen extends StatelessWidget {
   @override
@@ -8,7 +9,11 @@ class MainScreen extends StatelessWidget {
         title: Text('Wisata Bandung'),
       ),
       body: FlatButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return DetailScreen();
+          }));
+        },
         child: Card(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
