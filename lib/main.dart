@@ -9,12 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Sites App',
       theme: ThemeData.dark(),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('My Sites App'),
-        ),
-        body: DetailScreen(),
-      ),
+      home: DetailScreen(),
     );
   }
 }
